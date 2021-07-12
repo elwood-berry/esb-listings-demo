@@ -15,11 +15,13 @@ import { ListingsService } from './services/listings/listings.service';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+  // INPUT PROPERTIES
   @Input() checked;
 
   // PROPERTIES.
   public listings: string = 'assets/data/listings/listings.json';
   public jsonListings;
+  public listingCount: number;
   public currentListing = 0;
   public miles: number;
 
@@ -186,7 +188,9 @@ export class AppComponent {
     // JSON: LISTINGS
     json.getData(this.listings).subscribe(result => {
       console.log('Listings Data', result);
-      this.jsonListings = result;
+
+      this.listingCount = result.length; // DEFINE THE LENGHT OF THE ARRAY
+      this.jsonListings = result; // UPDATE PROPERTY
       console.log('JSON Listings', this.jsonListings);
     });
   }
@@ -204,6 +208,30 @@ export class AppComponent {
     } else {
       return false;
     }
+  }
+
+  // IS DISABLED?
+  public disabledPrevious(value) {
+    if (value === 0) {
+      return true;
+    } else {
+      return false;
+    }
+  }
+
+  public disabledNext(value) {
+    if (value === this.listingCount - 1) {
+      return true;
+    } else {
+      return false;
+    }
+  }
+
+  // CURRENT LISTING
+  // Update the current listing.
+  public toggleClick(value) {
+    console.log('Current Listing', value);
+    this.currentListing = value;
   }
 }
 
