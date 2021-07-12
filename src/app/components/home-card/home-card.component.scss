@@ -1,0 +1,135 @@
+/*
+MAP VARIABLES
+Colors
+Font Sizes
+mixins
+*/
+
+$demo-color-alpha: #ffee0038;
+$demo-color-bravo: #000; // #ff000038
+
+// MIXINS.
+@mixin homeStats {
+  color: $demo-color-bravo;
+  font-size: 16px;
+  font-weight: 400;
+  margin-right: 5px;
+
+  span {
+    font-weight: 100;
+  }
+}
+
+@mixin homeDisplaySection {
+  // background-color: $demo-color-alpha;
+  margin: 0 0 8px 0;
+}
+
+/*
+[core]
+HOME CARD 
+*/
+.core-home-card {
+  border-radius: 0;
+  box-shadow: none;
+  margin-left: 15px;
+  padding: 15px 0 0;
+  width: 450px;
+
+  // IMG
+  .mat-card-image {
+    margin: 0;
+    width: 100%;
+  }
+
+  // CONTENT
+  // ---------------------------
+
+  // PRICE INFO
+  .dsply__price-info {
+    @include homeDisplaySection;
+
+    .dsply__status {
+      color: $demo-color-bravo;
+      font-size: 14px;
+    }
+    .dsply__price {
+      color: $demo-color-bravo;
+      font-size: 18px;
+      font-weight: 700;
+    }
+  }
+
+  // HOME STATS.
+  .dsply__home-stats {
+    @include homeDisplaySection;
+
+    .dsply__bed,
+    .dsply__bath,
+    .dsply__sqft,
+    .dsply__sqftlot {
+      @include homeStats;
+    }
+  }
+
+  // FULL ADDRESS.
+  .dsply__full-address {
+    @include homeDisplaySection;
+    color: $demo-color-bravo;
+  }
+}
+
+//IMAGE.
+.img-container {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 300px;
+  margin-bottom: 15px;
+  overflow: hidden;
+}
+
+/*
+OVERLAY
+*/
+.core-img-overlay {
+  // background-color: rgba(255, 255, 0, 0.35);
+  height: 300px;
+  position: absolute;
+  top: 0px;
+  width: 100%;
+
+  header {
+    // background-color: rgb(255 0 0 / 5%);
+
+    .core-col {
+      // background-color: rgb(255 255 255 / 25%);
+
+      .dsply__broker-name {
+        color: #757575;
+        font-size: 11px;
+      }
+      img {
+        width: 100%;
+      }
+    }
+  }
+  .overlay-body {
+    height: 195px;
+  }
+  footer {
+  }
+
+  // OTHER ELEMENTS
+
+  .mat-chip {
+    background-color: #0062b5;
+    border-radius: 4px;
+    color: #fff;
+    display: block;
+    margin: 5px;
+    padding: 5px;
+    white-space: nowrap;
+    width: min-content;
+  }
+}

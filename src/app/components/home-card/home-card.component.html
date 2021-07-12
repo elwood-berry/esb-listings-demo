@@ -1,0 +1,93 @@
+<!--
+  APPLICATION NAME GOES HERE
+  Author: 'me@elwoodberry.com'
+  This code is brought to you by Elwood Berry @www.elwoodberry.com 
+-->
+
+<mat-card class="core-home-card">
+
+  <!-- 
+    IMG OVERLAY
+    Lays over the image slide show.
+  -->
+  <div class="core-img-overlay">
+
+    <!-- HEADER: IMG OVERLAY-->
+    <header fxLayout="row">
+      <div class="core-col" fxFlex="15%">
+        <img class="" [src]="imgBroker" [alt]="broker">
+      </div>
+      <div class="core-col" fxFlex="85%">
+        <div class="dsply__broker-name">Brokered by {{ broker | titlecase }}</div>
+        <mat-chip *ngIf="new">New <span>- 18 Hours Ago</span> </mat-chip>
+      </div>
+    </header>
+
+    <!-- BODY: IMG OVERLAY-->
+    <div class="overlay-body"></div>
+
+    <!-- FOOTER: IMG OVERLAY-->
+    <footer fxLayout="row">
+      <button mat-fab aria-label="Link to external website about this property">
+        <mat-icon>language</mat-icon>
+      </button>
+
+      <button mat-fab aria-label="Favorite this property to see it later">
+        <mat-icon>favorite</mat-icon>
+      </button>
+    </footer>
+
+  </div>
+
+  <div class="img-container" style='background-image: url({{imgHome}});'>
+    <!-- <img mat-card-image [src]="imgHome" alt=""> -->
+  </div>
+
+
+
+  <mat-card-content>
+
+    <div class="dsply__price-info">
+      <div class="dsply__status">{{status}}</div>
+      <div class="">
+        <span class="">$ </span>
+        <span class="dsply__price">{{ price | number: '1.0-0'}}</span>
+      </div>
+    </div>
+
+
+    <div class="dsply__home-stats" fxLayout="row">
+      <div class="dsply__bed">{{bed}}<span> bed</span></div>
+      <div class="dsply__bath">{{bath}}<span> bath</span></div>
+      <div class="dsply__sqft">{{sqft}}<span> sqft</span></div>
+      <div class="dsply__sqftlot">{{sqftlot}}<span> acre lot</span></div>
+    </div>
+
+    <div class="dsply__full-address">
+      {{ address1 }}<br>
+      {{ address2 }}<br>
+      {{ city }}, {{ state }} {{ zip }}
+    </div>
+  </mat-card-content>
+
+  <mat-card-actions>
+    <div><span>Open House: </span> {{ openHouseDate | date }}</div>
+    <div *ngIf="miles > 10">
+      <span>Distance: </span> {{ miles | convert: 'a' }}
+    </div>
+    <button mat-button>Email Agent</button>
+  </mat-card-actions>
+
+  <mat-card-footer>Footer</mat-card-footer>
+
+</mat-card>
+
+
+
+<!--
+
+-------------------------------------------------
+Copyright 2021 ElwoodBerry.com LLC. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that can be found in the LICENSE file at http://www.elwoodberry.com 
+
+-->

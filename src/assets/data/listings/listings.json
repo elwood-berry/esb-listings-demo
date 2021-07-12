@@ -1,0 +1,211 @@
+[{
+	"address1": "4357 waterstone estates dr",
+	"address2": "",
+	"bath": 4.5,
+	"bed": 5,
+	"broker": "keller williams realty dallas preston road",
+	"city": "mckinney",
+	"imgBroker": [{
+		"imgBrokerId": 0,
+		"imgName": "name of the image goes here.",
+		"imgDescription": "description of the image goes here.",
+		"url": "https://ap.rdcpix.com/1839584087/cfc2d8e422aff58dc8972678b0d7a313o-c0s.jpg"
+	}],
+	"imgHome": [{
+			"imgHomeId": 0,
+			"imgName": "name of the image goes here.",
+			"imgDescription": "description of the image goes here.",
+			"url": "https://ap.rdcpix.com/58c93e27be7324d3e44594c5e960d66al-m2941557923od-w480_h360.jpg"
+		},
+		{
+			"imgHomeId": 1,
+			"imgName": "name of the image goes here.",
+			"imgDescription": "description of the image goes here.",
+			"url": "https://ap.rdcpix.com/58c93e27be7324d3e44594c5e960d66al-m290641702od-w640_h480.jpg"
+		}
+	],
+	"likes": 1,
+	"listingId": 0,
+	"new": true,
+	"newConstruction": true,
+	"openHouseDate": "june, 12, 2021",
+	"price": 1095000,
+	"sqft": 4938,
+	"sqftlot": 1,
+	"state": [{
+		"abbrv": "tx",
+		"full": "texas"
+	}],
+	"status": ["for sale", "contingent", "pending"],
+	"url": "www.domain.com",
+	"zip": 75071
+},
+{
+	"address1": "6251 trinity falls pkwy",
+	"address2": "",
+	"bath": 3,
+	"bed": 3,
+	"broker": "local realty agency",
+	"city": "mckinney",
+	"imgBroker": [{
+		"imgBrokerId": 0,
+		"imgName": "name of the image goes here.",
+		"imgDescription": "description of the image goes here.",
+		"url": "https://ap.rdcpix.com/1839584087/cfc2d8e422aff58dc8972678b0d7a313o-c0s.jpg"
+	}],
+	"imgHome": [{
+			"imgHomeId": 0,
+			"imgName": "name of the image goes here.",
+			"imgDescription": "description of the image goes here.",
+			"url": "https://ap.rdcpix.com/da8325033e3b1ea0ab753f4f1b42917cl-m2677357371od-w480_h360.jpg"
+		},
+		{
+			"imgHomeId": 1,
+			"imgName": "name of the image goes here.",
+			"imgDescription": "description of the image goes here.",
+			"url": "https://ap.rdcpix.com/da8325033e3b1ea0ab753f4f1b42917cl-m2973959515od-w640_h480.jpg"
+		}
+	],
+	"likes": 1,
+	"listingId": 0,
+	"new": true,
+	"newConstruction": true,
+	"openHouseDate": "june, 12, 2021",
+	"price": 460000,
+	"sqft": 3815,
+	"sqftlot": 1,
+	"state": [{
+		"abbrv": "tx",
+		"full": "texas"
+	}],
+	"status": ["for sale", "contingent", "pending"],
+	"url": "www.domain.com",
+	"zip": 75071
+},
+{
+	"address1": "1009 mallard lakes dr",
+	"address2": "",
+	"bath": 3.5,
+	"bed": 5,
+	"broker": "ebby halliday - allen / fairview / lucas",
+	"city": "mckinney",
+	"imgBroker": [{
+		"imgBrokerId": 0,
+		"imgName": "name of the image goes here.",
+		"imgDescription": "description of the image goes here.",
+		"url": "https://ap.rdcpix.com/2142205665/b6135f748cb8096baaa4ecb42c683faco-c0s.jpg"
+	}],
+	"imgHome": [{
+			"imgHomeId": 0,
+			"imgName": "name of the image goes here.",
+			"imgDescription": "description of the image goes here.",
+			"url": "https://ap.rdcpix.com/58c93e27be7324d3e44594c5e960d66al-m2941557923od-w480_h360.jpg"
+		},
+		{
+			"imgHomeId": 1,
+			"imgName": "name of the image goes here.",
+			"imgDescription": "description of the image goes here.",
+			"url": "https://ap.rdcpix.com/58c93e27be7324d3e44594c5e960d66al-m290641702od-w640_h480.jpg"
+		}
+	],
+	"likes": 1,
+	"listingId": 0,
+	"new": true,
+	"newConstruction": true,
+	"openHouseDate": "june, 12, 2021",
+	"price": 700000,
+	"sqft": 4629,
+	"sqftlot": 1,
+	"state": [{
+		"abbrv": "tx",
+		"full": "texas"
+	}],
+	"status": ["for sale", "contingent", "pending"],
+	"url": "www.domain.com",
+	"zip": 75071
+},
+{
+	"address1": "4598 lake breeze dr",
+	"address2": "",
+	"bath": 4.5,
+	"bed": 4,
+	"broker": "re/max four corners",
+	"city": "mckinney",
+	"imgBroker": [{
+		"imgBrokerId": 0,
+		"imgName": "name of the image goes here.",
+		"imgDescription": "description of the image goes here.",
+		"url": "https://p.rdcpix.com/v02/o00b20b00-c0s.gif"
+	}],
+	"imgHome": [{
+			"imgHomeId": 0,
+			"imgName": "name of the image goes here.",
+			"imgDescription": "description of the image goes here.",
+			"url": "https://ap.rdcpix.com/3a8323ae5084175f0e424a6267a4da7cl-m1502157046od-w480_h360.jpg"
+		},
+		{
+			"imgHomeId": 1,
+			"imgName": "name of the image goes here.",
+			"imgDescription": "description of the image goes here.",
+			"url": "https://ap.rdcpix.com/3a8323ae5084175f0e424a6267a4da7cl-m100651634od-w640_h480.jpg"
+		}
+	],
+	"likes": 1,
+	"listingId": 0,
+	"new": true,
+	"newConstruction": true,
+	"openHouseDate": "june, 12, 2021",
+	"price": 800000,
+	"sqft": 4931,
+	"sqftlot": 1.78,
+	"state": [{
+		"abbrv": "tx",
+		"full": "texas"
+	}],
+	"status": ["for sale", "contingent", "pending"],
+	"url": "www.domain.com",
+	"zip": 75071
+},
+{
+	"address1": "4855 lake shore dr",
+	"address2": "",
+	"bath": 4.5,
+	"bed": 4,
+	"broker": "re/max four corners",
+	"city": "mckinney",
+	"imgBroker": [{
+		"imgBrokerId": 0,
+		"imgName": "name of the image goes here.",
+		"imgDescription": "description of the image goes here.",
+		"url": "https://ap.rdcpix.com/1839584087/cfc2d8e422aff58dc8972678b0d7a313o-c0s.jpg"
+	}],
+	"imgHome": [{
+			"imgHomeId": 0,
+			"imgName": "name of the image goes here.",
+			"imgDescription": "description of the image goes here.",
+			"url": "https://ap.rdcpix.com/50537f4e7946776cccbf074ec98843a1l-m2255732883od-w480_h360.jpg"
+		},
+		{
+			"imgHomeId": 1,
+			"imgName": "name of the image goes here.",
+			"imgDescription": "description of the image goes here.",
+			"url": "https://ap.rdcpix.com/50537f4e7946776cccbf074ec98843a1l-m2975169981od-w640_h480.jpg"
+		}
+	],
+	"likes": 1,
+	"listingId": 0,
+	"new": true,
+	"newConstruction": true,
+	"openHouseDate": "june, 12, 2021",
+	"price": 1393684,
+	"sqft": 4519,
+	"sqftlot": 1,
+	"state": [{
+		"abbrv": "tx",
+		"full": "texas"
+	}],
+	"status": ["for sale", "contingent", "pending"],
+	"url": "www.domain.com",
+	"zip": 75071
+}
+]
