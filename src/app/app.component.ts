@@ -4,7 +4,7 @@ Author: 'me@elwoodberry.com'
 This code is brought to you by Elwood Berry @www.elwoodberry.com 
 */
 
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 // SERVICE
 import { ListingsService } from './services/listings/listings.service';
@@ -15,9 +15,12 @@ import { ListingsService } from './services/listings/listings.service';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+  @Input() checked;
+
   // PROPERTIES.
   public listings: string = 'assets/data/listings/listings.json';
   public jsonListings;
+  public currentListing = 0;
   public miles: number;
 
   // SAMPLE LISTING
@@ -191,6 +194,16 @@ export class AppComponent {
   // CUSTOM PIPE METHOD.
   public onMilesChange(value: string) {
     this.miles = parseFloat(value);
+  }
+
+  // IS CHECKED.
+  public open(value) {
+    // console.log("Value In", value)
+    if (this.currentListing === value) {
+      return true;
+    } else {
+      return false;
+    }
   }
 }
 
