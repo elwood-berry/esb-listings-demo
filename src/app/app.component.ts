@@ -46,7 +46,7 @@ export class AppComponent {
 
   /*
   CHECK PAGINATION 
-  Allows me to leverage the MATH method to evaluate the number of pages.
+  Allows me to leverage the MATH object to evaluate the number of pages.
   */
   public checkPagination(value: number) {
     return Math.abs(this.currentListing - value) < 5;
