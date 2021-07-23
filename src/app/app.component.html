@@ -9,21 +9,29 @@
   PAGINATION
 -->
 <mat-button-toggle-group class="elwood-toggle-group" name="" aria-label="">
-  <mat-button-toggle (click)="currentListing = currentListing - 1" [disabled]="disabledPrevious(currentListing)">Previous
+  <mat-button-toggle (click)="currentListing = currentListing - 1" [disabled]="disabledPrevious(currentListing)">
+    Previous
   </mat-button-toggle>
   <mat-button-toggle *ngFor="let listing of jsonListings; let i = index" [checked]="open(i)" (click)="toggleClick(i)">{{
     i +1 }}
   </mat-button-toggle>
-  <mat-button-toggle (click)="currentListing = currentListing + 1" [disabled]="disabledNext(currentListing)">Next</mat-button-toggle>
+  <mat-button-toggle (click)="currentListing = currentListing + 1" [disabled]="disabledNext(currentListing)">Next
+  </mat-button-toggle>
 </mat-button-toggle-group>
 
+
 <!-- 
-  [version.03]
+  [version.04]
   LOCAL JSON DATA BINDING
+  Only show the listing based on the pagination.
 -->
-<app-home-card *ngFor="let listing of jsonListings" [address1]="listing.address1" [address2]="listing.address2"
-  [bath]="listing.bath" [bed]="listing.bed" [broker]="listing.broker" [city]="listing.city"
-  [imgBroker]="listing.imgBroker[0].url" [imgHome]="listing.imgHome[0].url" [likes]="listing.likes"
-  [listingId]="listing.listingId" [new]="listing.new" [openHouseDate]="listing.openHouseDate" [price]="listing.price"
-  [sqft]="listing.sqft" [sqftlot]="listing.sqftlot" [state]="listing.state[0].abbrv" [status]="listing.status"
-  [url]="listing.url" [zip]="listing.zip" [miles]="listing.miles"></app-home-card>
+<app-home-card [address1]="jsonListings[currentListing].address1" [address2]="jsonListings[currentListing].address2"
+  [bath]="jsonListings[currentListing].bath" [bed]="jsonListings[currentListing].bed"
+  [broker]="jsonListings[currentListing].broker" [city]="jsonListings[currentListing].city"
+  [imgBroker]="jsonListings[currentListing].imgBroker[0].url" [imgHome]="jsonListings[currentListing].imgHome[0].url"
+  [likes]="jsonListings[currentListing].likes" [listingId]="jsonListings[currentListing].listingId"
+  [new]="jsonListings[currentListing].new" [openHouseDate]="jsonListings[currentListing].openHouseDate"
+  [price]="jsonListings[currentListing].price" [sqft]="jsonListings[currentListing].sqft"
+  [sqftlot]="jsonListings[currentListing].sqftlot" [state]="jsonListings[currentListing].state[0].abbrv"
+  [status]="jsonListings[currentListing].status" [url]="jsonListings[currentListing].url"
+  [zip]="jsonListings[currentListing].zip" [miles]="jsonListings[currentListing].miles"></app-home-card>
