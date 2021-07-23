@@ -1,4 +1,128 @@
 [{
+	"address1": "4072 Kulamanu St",
+	"address2": "",
+	"bath": 3.5,
+	"bed": 4,
+	"broker": "Harcourts Island Real Estate",
+	"city": "honolulu",
+	"imgBroker": [{
+		"imgBrokerId": 0,
+		"imgName": "name of the image goes here.",
+		"imgDescription": "description of the image goes here.",
+		"url": "https://ap.rdcpix.com/1839584087/cfc2d8e422aff58dc8972678b0d7a313o-c0s.jpg"
+	}],
+	"imgHome": [{
+			"imgHomeId": 0,
+			"imgName": "name of the image goes here.",
+			"imgDescription": "description of the image goes here.",
+			"url": "https://ap.rdcpix.com/d31a8633a083a8f4d188e917ea8dfcd7l-m72498639od-w480_h360.jpg"
+		},
+		{
+			"imgHomeId": 1,
+			"imgName": "name of the image goes here.",
+			"imgDescription": "description of the image goes here.",
+			"url": "https://ap.rdcpix.com/d31a8633a083a8f4d188e917ea8dfcd7l-m72498639od-w480_h360.jpg"
+		}
+	],
+	"likes": 1,
+	"listingId": 0,
+	"new": true,
+	"newConstruction": true,
+	"openHouseDate": "june, 12, 2021",
+	"price": 4900000,
+	"sqft": 3499,
+	"sqftlot": 7544,
+	"state": [{
+		"abbrv": "HI",
+		"full": "hawaii"
+	}],
+	"status": ["for sale", "contingent", "pending"],
+	"url": "www.domain.com",
+	"zip": 96816
+},{
+	"address1": "3505 Kahawalu Dr",
+	"address2": "",
+	"bath": 3,
+	"bed": 5,
+	"broker": "One Realty, Incorporated",
+	"city": "honolulu",
+	"imgBroker": [{
+		"imgBrokerId": 0,
+		"imgName": "name of the image goes here.",
+		"imgDescription": "description of the image goes here.",
+		"url": "https://ap.rdcpix.com/1839584087/cfc2d8e422aff58dc8972678b0d7a313o-c0s.jpg"
+	}],
+	"imgHome": [{
+			"imgHomeId": 0,
+			"imgName": "name of the image goes here.",
+			"imgDescription": "description of the image goes here.",
+			"url": "https://ap.rdcpix.com/4f04a99cfe7ce985f0401e3bcd04bc8el-m3003180373od-w480_h360.jpg"
+		},
+		{
+			"imgHomeId": 1,
+			"imgName": "name of the image goes here.",
+			"imgDescription": "description of the image goes here.",
+			"url": "https://ap.rdcpix.com/4f04a99cfe7ce985f0401e3bcd04bc8el-m3003180373od-w480_h360.jpg"
+		}
+	],
+	"likes": 1,
+	"listingId": 0,
+	"new": true,
+	"newConstruction": true,
+	"openHouseDate": "june, 12, 2021",
+	"price": 1480000,
+	"sqft": 1960,
+	"sqftlot": 0.25,
+	"state": [{
+		"abbrv": "HI",
+		"full": "hawaii"
+	}],
+	"status": ["for sale", "contingent", "pending"],
+	"url": "www.domain.com",
+	"zip": 96817
+},{
+	"address1": "1945 Kuapapa Pl",
+	"address2": "",
+	"bath": 3.5,
+	"bed": 5,
+	"broker": "Hawaii Life Real Est. Brokers",
+	"city": "honolulu",
+	"imgBroker": [{
+		"imgBrokerId": 0,
+		"imgName": "name of the image goes here.",
+		"imgDescription": "description of the image goes here.",
+		"url": "https://ap.rdcpix.com/1839584087/cfc2d8e422aff58dc8972678b0d7a313o-c0s.jpg"
+	}],
+	"imgHome": [{
+			"imgHomeId": 0,
+			"imgName": "name of the image goes here.",
+			"imgDescription": "description of the image goes here.",
+			"url": "https://ap.rdcpix.com/3b7fbecf144e593b9b2247835a60cc5cl-m2659531525od-w480_h360.jpg"
+		},
+		{
+			"imgHomeId": 1,
+			"imgName": "name of the image goes here.",
+			"imgDescription": "description of the image goes here.",
+			"url": "https://ap.rdcpix.com/3b7fbecf144e593b9b2247835a60cc5cl-m2659531525od-w480_h360.jpg"
+		}
+	],
+	"likes": 1,
+	"listingId": 0,
+	"new": true,
+	"newConstruction": true,
+	"openHouseDate": "june, 12, 2021",
+	"price": 1098000,
+	"sqft": 2403,
+	"sqftlot": 9283,
+	"state": [{
+		"abbrv": "HI",
+		"full": "hawaii"
+	}],
+	"status": ["for sale", "contingent", "pending"],
+	"url": "www.domain.com",
+	"zip": 96819
+},
+	{
 	"address1": "4357 waterstone estates dr",
 	"address2": "",
 	"bath": 4.5,
@@ -81,6 +205,47 @@
 	"status": ["for sale", "contingent", "pending"],
 	"url": "www.domain.com",
 	"zip": 75071
+},{
+	"address1": "2127 Hakanu St",
+	"address2": "",
+	"bath": 3,
+	"bed": 3,
+	"broker": "Hawaii Real Estate Partners",
+	"city": "honolulu",
+	"imgBroker": [{
+		"imgBrokerId": 0,
+		"imgName": "name of the image goes here.",
+		"imgDescription": "description of the image goes here.",
+		"url": "https://ap.rdcpix.com/1839584087/cfc2d8e422aff58dc8972678b0d7a313o-c0s.jpg"
+	}],
+	"imgHome": [{
+			"imgHomeId": 0,
+			"imgName": "name of the image goes here.",
+			"imgDescription": "description of the image goes here.",
+			"url": "https://ap.rdcpix.com/22c422c9786f481cb94fd4a1d8adcf6dl-m2651669399od-w480_h360.jpg"
+		},
+		{
+			"imgHomeId": 1,
+			"imgName": "name of the image goes here.",
+			"imgDescription": "description of the image goes here.",
+			"url": "https://ap.rdcpix.com/22c422c9786f481cb94fd4a1d8adcf6dl-m2651669399od-w480_h360.jpg"
+		}
+	],
+	"likes": 1,
+	"listingId": 0,
+	"new": true,
+	"newConstruction": true,
+	"openHouseDate": "june, 12, 2021",
+	"price": 1925000,
+	"sqft": 2860,
+	"sqftlot": 8698,
+	"state": [{
+		"abbrv": "HI",
+		"full": "hawaii"
+	}],
+	"status": ["for sale", "contingent", "pending"],
+	"url": "www.domain.com",
+	"zip": 96821
 },
 {
 	"address1": "1009 mallard lakes dr",
@@ -207,5 +372,46 @@
 	"status": ["for sale", "contingent", "pending"],
 	"url": "www.domain.com",
 	"zip": 75071
+},{
+	"address1": "2637 Nahaku Pl",
+	"address2": "",
+	"bath": 3,
+	"bed": 5,
+	"broker": "Terraco Hawaii Real Estate Llc",
+	"city": "honolulu",
+	"imgBroker": [{
+		"imgBrokerId": 0,
+		"imgName": "name of the image goes here.",
+		"imgDescription": "description of the image goes here.",
+		"url": "https://ap.rdcpix.com/1839584087/cfc2d8e422aff58dc8972678b0d7a313o-c0s.jpg"
+	}],
+	"imgHome": [{
+			"imgHomeId": 0,
+			"imgName": "name of the image goes here.",
+			"imgDescription": "description of the image goes here.",
+			"url": "https://ap.rdcpix.com/471c0226a328f81ded949c067192293el-m3078646453od-w480_h360.jpg"
+		},
+		{
+			"imgHomeId": 1,
+			"imgName": "name of the image goes here.",
+			"imgDescription": "description of the image goes here.",
+			"url": "https://ap.rdcpix.com/471c0226a328f81ded949c067192293el-m3078646453od-w480_h360.jpg"
+		}
+	],
+	"likes": 1,
+	"listingId": 0,
+	"new": true,
+	"newConstruction": true,
+	"openHouseDate": "june, 12, 2021",
+	"price": 1100000,
+	"sqft": 1953,
+	"sqftlot": 3116,
+	"state": [{
+		"abbrv": "HI",
+		"full": "hawaii"
+	}],
+	"status": ["for sale", "contingent", "pending"],
+	"url": "www.domain.com",
+	"zip": 96826
 }
 ]

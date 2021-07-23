@@ -201,3 +201,18 @@
     }
   ];  
 ```
+
+## Data Binding 
+```html    
+<!-- 
+  [version.03]
+  LOCAL JSON DATA BINDING
+-->
+<app-home-card *ngFor="let listing of jsonListings" [address1]="listing.address1" [address2]="listing.address2"
+  [bath]="listing.bath" [bed]="listing.bed" [broker]="listing.broker" [city]="listing.city"
+  [imgBroker]="listing.imgBroker[0].url" [imgHome]="listing.imgHome[0].url" [likes]="listing.likes"
+  [listingId]="listing.listingId" [new]="listing.new" [openHouseDate]="listing.openHouseDate" [price]="listing.price"
+  [sqft]="listing.sqft" [sqftlot]="listing.sqftlot" [state]="listing.state[0].abbrv" [status]="listing.status"
+  [url]="listing.url" [zip]="listing.zip" [miles]="listing.miles"></app-home-card>
+
+```
