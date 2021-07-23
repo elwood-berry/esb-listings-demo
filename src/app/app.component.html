@@ -4,18 +4,11 @@
   This code is brought to you by Elwood Berry @www.elwoodberry.com 
 -->
 
-
+<!-- 
+  [version.01]
+  PAGINATION
+-->
 <mat-button-toggle-group class="elwood-toggle-group" name="" aria-label="">
-  <!-- <mat-button-toggle 
-  value=""
-  [ngClass]="{ 'mat-button-toggle-checked' : i === currentListing }"
-    *ngFor="let listing of jsonListings; let i = index">
-    {{ i +1 }}
-  </mat-button-toggle> -->
-
-  <!-- <mat-button-toggle>Option 1</mat-button-toggle>
-  <mat-button-toggle checked="true">Option 2</mat-button-toggle> -->
-
   <mat-button-toggle [disabled]="disabledPrevious(currentListing)">Previous</mat-button-toggle>
   <mat-button-toggle *ngFor="let listing of jsonListings; let i = index" [checked]="open(i)" (click)="toggleClick(i)">{{
     i +1 }}
@@ -23,35 +16,8 @@
   <mat-button-toggle [disabled]="disabledNext(currentListing)">Next</mat-button-toggle>
 </mat-button-toggle-group>
 
-
-
 <!-- 
-  [example.01]
-  DATA BINDING
--->
-<!-- <app-home-card [address1]="sampleListings[0].address1" [address2]="sampleListings[0].address2"
-  [bath]="sampleListings[0].bath" [bed]="sampleListings[0].bed" [broker]="sampleListings[0].broker"
-  [city]="sampleListings[0].city" [imgBroker]="sampleListings[0].imgBroker[0].url"
-  [imgHome]="sampleListings[0].imgHome[0].url" [likes]="sampleListings[0].likes"
-  [listingId]="sampleListings[0].listingId" [new]="sampleListings[0].new"
-  [openHouseDate]="sampleListings[0].openHouseDate" [price]="sampleListings[0].price" [sqft]="sampleListings[0].sqft"
-  [sqftlot]="sampleListings[0].sqftlot" [state]="sampleListings[0].state[0].abbrv" [status]="sampleListings[0].status"
-  [url]="sampleListings[0].url" [zip]="sampleListings[0].zip"></app-home-card> -->
-
-
-<!-- 
-  [example.02]
-  DATA BINDING
--->
-<!-- <app-home-card *ngFor="let listing of sampleListings" [address1]="listing.address1" [address2]="listing.address2"
-  [bath]="listing.bath" [bed]="listing.bed" [broker]="listing.broker" [city]="listing.city"
-  [imgBroker]="listing.imgBroker[0].url" [imgHome]="listing.imgHome[0].url" [likes]="listing.likes"
-  [listingId]="listing.listingId" [new]="listing.new" [openHouseDate]="listing.openHouseDate" [price]="listing.price"
-  [sqft]="listing.sqft" [sqftlot]="listing.sqftlot" [state]="listing.state[0].abbrv" [status]="listing.status"
-  [url]="listing.url" [zip]="listing.zip" [miles]="listing.miles"></app-home-card> -->
-
-<!-- 
-  [example.03]
+  [version.03]
   LOCAL JSON DATA BINDING
 -->
 <app-home-card *ngFor="let listing of jsonListings" [address1]="listing.address1" [address2]="listing.address2"
