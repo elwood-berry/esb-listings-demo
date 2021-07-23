@@ -216,3 +216,13 @@
   [url]="listing.url" [zip]="listing.zip" [miles]="listing.miles"></app-home-card>
 
 ```
+
+
+## PAGINATION v.02 - 2021.07.22 
+```html  
+<mat-button-toggle-group class="elwood-toggle-group" name="" aria-label="">
+  <mat-button-toggle (click)="currentListing = currentListing - 1" [disabled]="disabledPrevious(currentListing)">Previous</mat-button-toggle>
+  <mat-button-toggle *ngFor="let listing of jsonListings; let i = index" [checked]="open(i)" (click)="toggleClick(i)">{{ i +1 }}</mat-button-toggle>
+  <mat-button-toggle (click)="currentListing = currentListing + 1" [disabled]="disabledNext(currentListing)">Next</mat-button-toggle>
+</mat-button-toggle-group>
+```

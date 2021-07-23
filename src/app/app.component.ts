@@ -44,6 +44,15 @@ export class AppComponent {
     this.miles = parseFloat(value);
   }
 
+  /*
+  CHECK PAGINATION 
+  Allows me to leverage the MATH method to evaluate the number of pages.
+  */
+  public checkPagination(value: number) {
+    return Math.abs(this.currentListing - value) < 5;
+  }
+  // [end] 'CHECK PAGINATION'
+
   /* 
   IS CHECKED?  
   Using Material Component 'mat-button-toggle'.
@@ -58,8 +67,11 @@ export class AppComponent {
       return false;
     }
   }
+  // [end] 'IS CHECKED?'
 
-  // IS DISABLED?
+  /* 
+  IS DISABLED? ('Previous' & 'Next')
+  */
   public disabledPrevious(value) {
     if (value === 0) {
       return true;
@@ -75,6 +87,7 @@ export class AppComponent {
       return false;
     }
   }
+  // [end] 'IS DISABLED? ('Previous' & 'Next')'
 
   // CURRENT LISTING
   // Update the current listing.
