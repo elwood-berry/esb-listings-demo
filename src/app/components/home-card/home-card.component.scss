@@ -25,6 +25,11 @@ $demo-color-bravo: #000; // #ff000038
   margin: 0 0 8px 0;
 }
 
+// HOST.
+:host {
+  margin: 0 auto;
+}
+
 /*
 [core]
 HOME CARD 
