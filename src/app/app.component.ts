@@ -9,189 +9,33 @@ import { Component, Input } from '@angular/core';
 // SERVICE
 import { ListingsService } from './services/listings/listings.service';
 
+// DECORATOR: Component
 @Component({
   selector: 'my-app',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
+
+// CLASS: App
 export class AppComponent {
   // INPUT PROPERTIES
   @Input() checked;
 
   // PROPERTIES.
   public listings: string = 'assets/data/listings/listings.json';
-  public jsonListings;
-  public listingCount: number;
+  public jsonListings; // LISTINGS FROM JSON ARRAY
+  public listingCount: number; // DEFINE THE LENGHT OF THE ARRAY
   public currentListing = 0;
   public miles: number;
 
-  // SAMPLE LISTING
-  public sampleListings = [
-    // LISTING #1 -------------------------------------------
-    {
-      address1: '1000 Somewhere Dr.',
-      address2: 'Suite 420',
-      bath: 100,
-      bed: 100,
-      broker: 'big dawg realty broker, Inc.',
-      city: 'Dallas',
-      imgBroker: [
-        {
-          imgBrokerId: 0,
-          imgName: 'Name of the image goes here.',
-          imgDescription: 'Description of the image goes here.',
-          url:
-            'https://ap.rdcpix.com/1269221619/88ab3e5ba67115f2bc21dbc9082db210o-c0s.jpg'
-        }
-      ],
-      imgHome: [
-        {
-          imgHomeId: 0,
-          imgName: 'Name of the image goes here.',
-          imgDescription: 'Description of the image goes here.',
-          url:
-            'https://ap.rdcpix.com/44ba5e8fcd0439cbe78b772b6ed1d482l-m1257779790od-w480_h360.jpg'
-        },
-        {
-          imgHomeId: 1,
-          imgName: 'Name of the image goes here.',
-          imgDescription: 'Description of the image goes here.',
-          url:
-            'https://ap.rdcpix.com/44ba5e8fcd0439cbe78b772b6ed1d482l-m1257779790od-w480_h360.jpg'
-        }
-      ],
-      likes: 1,
-      listingId: 0,
-      new: true,
-      openHouseDate: 'June, 12, 2021',
-      price: 1000000.99,
-      sqft: 10000,
-      sqftlot: 10000,
-      state: [
-        {
-          abbrv: 'TX',
-          full: 'Texas'
-        }
-      ],
-      status: ['For Sale'],
-      url: 'www.domain.com',
-      zip: 70000,
-      miles: 43
-    },
-
-    // LISTING #2 -------------------------------------------
-    {
-      address1: '7985 Thistletree Ln',
-      address2: '',
-      bath: 2.5,
-      bed: 4,
-      broker: 'Fat Cat Realty',
-      city: 'Frisco',
-      imgBroker: [
-        {
-          imgBrokerId: 0,
-          imgName: 'Name of the image goes here.',
-          imgDescription: 'Description of the image goes here.',
-          url:
-            'https://ap.rdcpix.com/1269221619/88ab3e5ba67115f2bc21dbc9082db210o-c0s.jpg'
-        }
-      ],
-      imgHome: [
-        {
-          imgHomeId: 0,
-          imgName: 'Name of the image goes here.',
-          imgDescription: 'Description of the image goes here.',
-          url:
-            'https://ap.rdcpix.com/d15d9e27e1fac7c2f85810f41e8cae06l-m3511790724od-w480_h360.jpg'
-        },
-        {
-          imgHomeId: 1,
-          imgName: 'Name of the image goes here.',
-          imgDescription: 'Description of the image goes here.',
-          url:
-            'https://ap.rdcpix.com/44ba5e8fcd0439cbe78b772b6ed1d482l-m1257779790od-w480_h360.jpg'
-        }
-      ],
-      likes: 1,
-      listingId: 1,
-      new: true,
-      openHouseDate: 'July, 19, 2021',
-      price: 495000,
-      sqft: 3069,
-      sqftlot: 0.29,
-      state: [
-        {
-          abbrv: 'TX',
-          full: 'Texas'
-        }
-      ],
-      status: ['For Sale'],
-      url: 'www.domain.com',
-      zip: 75033,
-      miles: 21
-    },
-
-    // LISTING #3 -------------------------------------------
-    {
-      address1: '4136 Los Altos Dr',
-      address2: '',
-      bath: 3,
-      bed: 4,
-      broker: 'Supreme Broker',
-      city: 'Plano',
-      imgBroker: [
-        {
-          imgBrokerId: 0,
-          imgName: 'Name of the image goes here.',
-          imgDescription: 'Description of the image goes here.',
-          url:
-            'https://ap.rdcpix.com/1269221619/88ab3e5ba67115f2bc21dbc9082db210o-c0s.jpg'
-        }
-      ],
-      imgHome: [
-        {
-          imgHomeId: 0,
-          imgName: 'Name of the image goes here.',
-          imgDescription: 'Description of the image goes here.',
-          url:
-            'https://ap.rdcpix.com/a252277401d0237fd64b64f3ed330705l-m3438727031od-w480_h360.jpg'
-        },
-        {
-          imgHomeId: 1,
-          imgName: 'Name of the image goes here.',
-          imgDescription: 'Description of the image goes here.',
-          url:
-            'https://ap.rdcpix.com/44ba5e8fcd0439cbe78b772b6ed1d482l-m1257779790od-w480_h360.jpg'
-        }
-      ],
-      likes: 1,
-      listingId: 0,
-      new: true,
-      openHouseDate: 'June, 12, 2021',
-      price: 499000,
-      sqft: 3095,
-      sqftlot: 0.26,
-      state: [
-        {
-          abbrv: 'TX',
-          full: 'Texas'
-        }
-      ],
-      status: ['For Sale'],
-      url: 'www.domain.com',
-      zip: 75024,
-      miles: 7
-    }
-  ];
-
+  // CONSTRUCTOR
   constructor(private json: ListingsService) {
     // JSON: LISTINGS
     json.getData(this.listings).subscribe(result => {
-      console.log('Listings Data', result);
-
-      this.listingCount = result.length; // DEFINE THE LENGHT OF THE ARRAY
-      this.jsonListings = result; // UPDATE PROPERTY
-      console.log('JSON Listings', this.jsonListings);
+      // console.log('Listings Data', result);
+      this.listingCount = result.length;
+      this.jsonListings = result;
+      // console.log('JSON Listings', this.jsonListings);
     });
   }
 
@@ -200,7 +44,12 @@ export class AppComponent {
     this.miles = parseFloat(value);
   }
 
-  // IS CHECKED.
+  /* 
+  IS CHECKED?  
+  Using Material Component 'mat-button-toggle'.
+  Method that checks to see if what page we are on.
+  If we are on THIS page 'checked' is TRUE. If not 'checked' is FALSE
+  */
   public open(value) {
     // console.log("Value In", value)
     if (this.currentListing === value) {
